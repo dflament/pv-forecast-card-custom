@@ -30,7 +30,7 @@ Heavily inspired by [Clock Weather Card](https://github.com/pkissling/clock-weat
    Add a new JavaScript module:
 
    ```
-   URL: /local/clock_pv_forecast_card.js
+   URL: /local/pv-forecast-card-custom.js
    Resource type: JavaScript Module
    ```
 
@@ -67,7 +67,7 @@ Heavily inspired by [Clock Weather Card](https://github.com/pkissling/clock-weat
    Neue Ressource hinzufügen:
 
    ```
-   URL: /local/clock_pv_forecast_card.js
+   URL: /local/pv-forecast-card-custom.js
    Ressourcentyp: JavaScript-Modul
    ```
 
@@ -196,6 +196,7 @@ show_tooltips: true
 | `remaining_low_color_end`       | `string` | Alert gradient (end)                                   |
 | `remaining_blink`               | `boolean`| Remaining bar blinks below threshold                   |
 | `max_value`                     | `number` | Maximum value to normalize bar width                   |
+| `max_value_entity`              | `sensor` | Maximum value to normalize bar width through a sensor, priority over max_value                  |
 | `show_tooltips`                 | `boolean`| Show tooltip when hovering the bar                    |
 | `relative_plus_one`             | `boolean`| In relative mode show "+1d" instead of "Tomorrow" (default: `false`) |
 
