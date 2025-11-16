@@ -5,6 +5,37 @@ fork of pv-forecast-card
 
 For the complete options please go to https://github.com/dropqube/pv-forecast-card as he's the original author of this card
 
+### 🇬🇧 MANUAL Installation of `clock-pv-forecast-card` in Home Assistant
+
+1. **Place the JavaScript file**  
+   Download or create the file `pv-forecast-card-custom.js` and save it to:
+   ```
+   /config/www/
+   ```
+
+2. **Register the resource**  
+   Go to:  
+   `Settings → Dashboards → ⋮ (three dots) → Resources`  
+   Add a new JavaScript module:
+
+   ```
+   URL: /local/clock_pv_forecast_card.js
+   Resource type: JavaScript Module
+   ```
+
+3. **Restart Home Assistant (recommended)**  
+   Or reload your dashboard and clear your browser cache if needed.
+
+4. **Add the card to a dashboard (YAML)**  
+   Use the YAML editor and set:
+
+   ```yaml
+   type: custom:pv-forecast-card-custom
+   ```
+
+5. **Ensure the required forecast entities exist**  
+   The sensors should return daily kWh values (e.g., from Solcast, DWD, etc.)
+
 
 ### 🔧 Configuration Options
 
