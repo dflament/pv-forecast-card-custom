@@ -1,4 +1,4 @@
-fork of pv-forecast-card
+### fork of pv-forecast-card
 
 - Added **max_value_entity** which accepts a sensor (I use a template sensor which calculates the max of all the forecast, rounded up)
 - max_value_entity has priority over max_value
