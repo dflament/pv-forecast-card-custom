@@ -3,7 +3,7 @@
 - Added **max_value_entity** which accepts a sensor (I use a template sensor which calculates the max of all the forecast, rounded up)
 - max_value_entity has priority over max_value
 
-For the complete options please go to https://github.com/dropqube/pv-forecast-card as he's the original author of this card
+For the complete options please go to https://github.com/dropqube/pv-forecast-card as he's the original author of this card ans should receive all the recognition
 
 ### 🇬🇧 MANUAL Installation of `clock-pv-forecast-card` in Home Assistant
 
